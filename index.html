@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 💜</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎬 Intro Screen -->
+  <div id="intro-screen">
+    <h1>For You, Debalina 🌸</h1>
+    <p>Tap to begin something simple & special</p>
+  </div>
+
+  <!-- 🎵 Background Music -->
+  <audio id="bg-music" preload="auto" loop>
+    <source src="music/happy-birthday.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- 📱 Mobile Collage Background -->
+  <div id="mobile-collage"></div>
+
+  <!-- Desktop Floating Photos -->
+  <div id="photo-grid"></div>
+
+  <!-- Glass Card -->
+  <div class="glass-card hidden" id="main-card">
+    <img id="main-photo" src="photos/1.jpeg" alt="memory" />
+
+    <div id="message" class="hidden">
+      <h2>🎂 Happy Birthday, <span class="name">Debalina</span> 🎈</h2>
+      <p id="typed-text"></p>
+
+      <div id="special-lines" class="hidden">
+        <p>✨ You bring calm just by being you</p>
+        <p>✨ Your presence makes moments feel lighter</p>
+        <p>✨ Knowing you is something I truly cherish</p>
+      </div>
+    </div>
+  </div>
+
+  <button id="next-btn" class="hidden" onclick="nextPhoto()">More ✨</button>
+  <button id="replay-btn" class="hidden" onclick="replay()">Watch Again</button>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
